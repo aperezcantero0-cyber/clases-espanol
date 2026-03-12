@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Profesor nativo certificado en ELE (Español como Lengua Extranjera). Especialidad en español para negocios y sector asegurador. Más de 10 años de experiencia.">
+    <meta name="keywords" content="profesor español nativo, profesor ELE, español negocios, español seguros, certificacion español lengua extranjera">
+    <title>Clases de Español Personalizadas - Sobre el Profesor</title>
+    <style>
+      :root{
+        --bg-start:#f8fafc;
+        --bg-end:#e5e7eb;
+        --card:#ffffff;
+        --accent:#3b82f6;
+        --accent-2:#8b5cf6;
+        --text:#1f2937;
+        --muted:#6b7280;
+      }
+      *,*::before,*::after{box-sizing:border-box}
+      body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg-start) 0%,var(--bg-end) 100%);color:var(--text);margin:0}
+      main{max-width:960px;margin:2.25rem auto;padding:1.25rem}
+      h1{font-size:1.9rem;margin:0 0 0.8rem;text-align:center;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+      h2{font-size:1.22rem;margin-top:0;color:var(--text)}
+      p{margin:0.55rem 0;color:var(--text);line-height:1.6}
+      section{background:var(--card);border-radius:14px;padding:1.5rem;box-shadow:0 10px 30px rgba(15,23,42,0.06);margin-bottom:1.25rem}
+      .btn{display:inline-block;padding:0.45rem 0.9rem;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:600;box-shadow:0 8px 18px rgba(59,130,246,0.25);transition:transform 0.14s ease,box-shadow 0.14s ease;text-decoration:none;cursor:pointer;border:0}
+      .btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(59,130,246,0.35)}
+      .btn-back{background:#f1f5f9;color:var(--text);box-shadow:none;margin-bottom:1rem}
+      .certificate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-top:1rem}
+      .certificate-card{background:#f9fafb;padding:1rem;border-radius:10px;text-align:center;border:1px solid #e5e7eb}
+      .soon{font-size:0.8rem;color:var(--muted);text-transform:uppercase}
+      .lang-selector{position:fixed;top:1rem;right:1rem;z-index:1000}
+      .lang-btn{background:var(--accent);color:#fff;border:0;padding:0.5rem 1rem;border-radius:8px;cursor:pointer;font-weight:600;font-size:0.9rem;transition:background 0.2s}
+      .lang-btn:hover{background:var(--accent-2)}
+      
+      /* Lógica de idiomas */
+      [data-lang="es"] .lang-en { display: none; }
+      [data-lang="en"] .lang-es { display: none; }
+    </style>
+  </head>
+  <body>
+    <div class="lang-selector">
+      <button class="lang-btn" onclick="changeLanguage('es')">🇪🇸</button>
+      <button class="lang-btn" onclick="changeLanguage('en')" style="margin-left:0.5rem">🇬🇧</button>
+    </div>
+    <main>
+      <a class="btn btn-back" href="index.html">
+        <span class="lang-es">← Volver al Inicio</span>
+        <span class="lang-en">← Back to Home</span>
+      </a>
+
+      <h1>
+        <span class="lang-es">Sobre el Profesor</span>
+        <span class="lang-en">About the Professor</span>
+      </h1>
+
+      <section>
+        <h2><span class="lang-es">Mi Trayectoria</span><span class="lang-en">My Background</span></h2>
+        <p>
+          <span class="lang-es">Como profesor nativo y certificado en ELE (Español como Lengua Extranjera), mi enfoque se basa en la comunicación real y la gramática cognitiva. Entiendo que aprender un idioma es mucho más que memorizar reglas; es abrir una puerta a una nueva cultura.</span>
+          <span class="lang-en">As a native teacher certified in ELE (Spanish as a Foreign Language), my approach is based on real communication and cognitive grammar. I understand that learning a language is much more than memorizing rules; it's opening a door to a new culture.</span>
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="lang-es">Formación y Certificaciones</span><span class="lang-en">Education & Certifications</span></h2>
+        <div class="certificate-grid">
+          <div class="certificate-card">
+            <p>🎓 <span class="lang-es">Certificación ELE</span><span class="lang-en">ELE Certification</span></p>
+          </div>
+          <div class="certificate-card">
+            <p>🎓 <span class="lang-es">Gramática Cognitiva</span><span class="lang-en">Cognitive Grammar</span></p>
+          </div>
+          <div class="certificate-card">
+            <p>📄 <span class="lang-es">Especialización B2-C1</span><span class="lang-en">B2-C1 Specialization</span></p>
+          </div>
+          <div class="certificate-card">
+            <p>📄 <span class="lang-es">Cursos de Cultura</span><span class="lang-en">Culture Courses</span></p>
+            <p class="soon"><span class="lang-es">Próximamente</span><span class="lang-en">Coming Soon</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section style="text-align:center">
+        <h2><span class="lang-es">¿Listo para empezar?</span><span class="lang-en">Ready to start?</span></h2>
+        <p>
+          <span class="lang-es">Agenda tu primera lección y comencemos a trabajar en tus objetivos hoy mismo.</span>
+          <span class="lang-en">Schedule your first lesson and let's start working on your goals today.</span>
+        </p>
+        <div style="margin-top:1.5rem">
+          <a class="btn" href="contacto.html">
+            <span class="lang-es">Contactar ahora</span>
+            <span class="lang-en">Contact now</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer style="display:flex;align-items:center;justify-content:center;gap:0.5rem">
+      <img src="APC FINAL.png" alt="Logo APC" style="width:80px;height:80px;border-radius:50%;object-fit:cover">
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+      function changeLanguage(lang){
+        localStorage.setItem('language', lang);
+        document.documentElement.setAttribute('data-lang', lang);
+      }
+      // Aplicar idioma guardado al cargar
+      document.documentElement.setAttribute('data-lang', localStorage.getItem('language') || 'es');
+    </script>
+  </body>
+</html>
