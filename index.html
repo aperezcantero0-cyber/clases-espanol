@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -117,4 +118,126 @@
       document.documentElement.setAttribute('data-lang', localStorage.getItem('language') || 'es');
     </script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Clases particulares de español online con profesor nativo certificado. Español para extranjeros, español para negocios ELE/N con especialidad en seguros. Todos los niveles A1-C2.">
+    <meta name="keywords" content="clases español, español online, profesor español, español extranjeros, español negocios, ELE, español seguros, aprender español, clases particulares español">
+    <meta name="author" content="Profesor de Español">
+    <title>Clases de Español Personalizadas - Profesor Nativo Certificado</title>
+    <style>
+      :root{
+        --bg-start:#f8fafc;
+        --bg-end:#e5e7eb;
+        --card:#ffffff;
+        --accent:#3b82f6;
+        --accent-2:#8b5cf6;
+        --text:#1f2937;
+        --muted:#6b7280;
+      }
+      *,*::before,*::after{box-sizing:border-box}
+      body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg-start) 0%,var(--bg-end) 100%);color:var(--text);margin:0}
+      main{max-width:960px;margin:2.25rem auto;padding:1.25rem}
+      h1{font-size:1.9rem;margin:0 0 0.8rem;text-align:center;line-height:1.1;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+      h2{font-size:1.22rem;margin-top:0;color:var(--text)}
+      h3{font-size:1.05rem;color:var(--text);margin-top:1.25rem}
+      p{margin:0.55rem 0;color:var(--text)}
+      a{color:var(--accent);text-decoration:none}
+      a:hover{text-decoration:underline}
+      img{max-width:100%;height:auto;border-radius:10px;display:block}
+      figure{margin:0.85rem 0}
+      figcaption{font-size:0.92rem;color:var(--muted);margin-top:0.35rem}
+      ul,ol{padding-left:1.35rem}
+      section{background:var(--card);border-radius:14px;padding:1.15rem;box-shadow:0 10px 30px rgba(15,23,42,0.06);margin-bottom:1.25rem;transition:transform .22s ease,box-shadow .22s ease}
+      section:hover{transform:translateY(-6px);box-shadow:0 18px 48px rgba(15,23,42,0.09)}
+      .header-actions{display:flex;justify-content:center;gap:0.5rem;margin:0.8rem 0 1rem;flex-wrap:wrap}
+      .banner-online{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:1rem;border-radius:8px;margin-bottom:1rem;color:#fff;font-weight:600;line-height:1.6}
+      .btn{display:inline-block;padding:0.45rem 0.9rem;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:600;box-shadow:0 8px 18px rgba(59,130,246,0.25);transition:transform 0.14s ease,box-shadow 0.14s ease;text-decoration:none;cursor:pointer;border:0}
+      .btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(59,130,246,0.35)}
+      footer{max-width:960px;margin:0 auto 2.25rem;padding:1rem;text-align:center;color:var(--muted)}
+      .lang-selector{position:fixed;top:1rem;right:1rem;z-index:1000}
+      .lang-btn{background:var(--accent);color:#fff;border:0;padding:0.5rem 1rem;border-radius:8px;cursor:pointer;font-weight:600;font-size:0.9rem;transition:background 0.2s}
+      .lang-btn:hover{background:var(--accent-2)}
+
+      /* Lógica de visibilidad de idiomas */
+      [data-lang="es"] .lang-en { display: none; }
+      [data-lang="en"] .lang-es { display: none; }
+
+      @media(min-width:900px){main{padding:2rem}h1{font-size:2.2rem}}
+    </style>
+  </head>
+  <body>
+    <div class="lang-selector" style="display:flex;align-items:center;gap:0.5rem;top:1rem;right:1rem;z-index:1000">
+      <img src="APC FINAL.png" alt="Logo APC" style="width:40px;height:40px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
+      <button class="lang-btn" onclick="changeLanguage('es')">🇪🇸</button>
+      <button class="lang-btn" onclick="changeLanguage('en')">🇬🇧</button>
+    </div>
+    <main>
+      <div style="text-align:center;margin-bottom:0.5rem">
+        <h1><span class="lang-es">Clases de Español Personalizadas</span><span class="lang-en">Personalized Spanish Classes</span></h1>
+        <p style="margin:0;font-size:1rem;color:var(--muted)"><span class="lang-es">Tu español profesional, tu ventaja competitiva</span><span class="lang-en">Your professional Spanish, your competitive advantage</span></p>
+      </div>
+      <div class="header-actions">
+        <a class="btn" href="sobre.html"><span class="lang-es">Conoce al Profesor</span><span class="lang-en">About the Professor</span></a>
+        <a class="btn" href="certificaciones.html"><span class="lang-es">Certificaciones Internacionales</span><span class="lang-en">International Certifications</span></a>
+        <a class="btn" href="contacto.html"><span class="lang-es">Contactar Profesor</span><span class="lang-en">Contact Professor</span></a>
+      </div>
+      <section>
+        <h2><span class="lang-es">Aprende Español con un Profesor Especializado</span><span class="lang-en">Learn Spanish with a Specialized Teacher</span></h2>
+        <div class="banner-online"><span class="lang-es">🌍 <strong>Clases 100% Online</strong> - Toma clases desde cualquier lugar del mundo</span><span class="lang-en">🌍 <strong>100% Online Classes</strong> - Take classes from anywhere in the world</span></div>
+        <p><span class="lang-es">Te ofrezco clases particulares personalizadas adaptadas completamente a tu nivel, ritmo y objetivos de aprendizaje.</span><span class="lang-en">I offer personalized private classes tailored to your level, pace, and learning objectives.</span></p>
+        <p><span class="lang-es">Con más de 10 años de experiencia enseñando español a extranjeros, utilizo métodos probados que garantizan resultados rápidos.</span><span class="lang-en">With over 10 years of experience teaching Spanish to foreigners, I use proven methods that guarantee quick results.</span></p>
+      </section>
+      <section id="services">
+        <h2><span class="lang-es">¿Por qué elegir mis clases particulares?</span><span class="lang-en">Why Choose My Private Classes?</span></h2>
+        <ul>
+          <li><span class="lang-es"><strong>100% Online</strong> - Desde tu casa o cualquier lugar del mundo</span><span class="lang-en"><strong>100% Online</strong> - From your home or anywhere in the world</span></li>
+          <li><span class="lang-es"><strong>Clases 100% personalizadas</strong> - Enfocadas en tus necesidades</span><span class="lang-en"><strong>100% Personalized Classes</strong> - Focused on your specific needs</span></li>
+          <li><span class="lang-es"><strong>Horarios flexibles</strong> - Adaptados a tu disponibilidad</span><span class="lang-en"><strong>Flexible Schedules</strong> - Adapted to your availability</span></li>
+          <li><span class="lang-es"><strong>Profesor nativo y certificado</strong> - Gramática y cultura auténtica</span><span class="lang-en"><strong>Native and Certified Teacher</strong> - Grammar and authentic culture</span></li>
+        </ul>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80" alt="Libros y estudio">
+          <figcaption><em><span class="lang-es">Materiales de aprendizaje</span><span class="lang-en">Learning materials</span></em></figcaption>
+        </figure>
+      </section>
+      <section id="levels">
+        <h2><span class="lang-es">Niveles disponibles</span><span class="lang-en">Available Levels</span></h2>
+        <p><span class="lang-es">Ofrezco clases para todos los niveles del MCER:</span><span class="lang-en">I offer classes for all CEFR levels:</span></p>
+        <h3><span class="lang-es">Nivel A - Elemental</span><span class="lang-en">Level A - Elementary</span></h3>
+        <ul>
+          <li><span class="lang-es">A1 y A2 - Desde cero hasta situaciones cotidianas</span><span class="lang-en">A1 & A2 - From zero to everyday situations</span></li>
+        </ul>
+        <h3><span class="lang-es">Nivel B - Intermedio</span><span class="lang-en">Level B - Intermediate</span></h3>
+        <ul>
+          <li><span class="lang-es">B1 y B2 - Conversación fluida y expresión detallada</span><span class="lang-en">B1 & B2 - Fluent conversation and detailed expression</span></li>
+        </ul>
+        <h3><span class="lang-es">Español para Negocios - ELE/N</span><span class="lang-en">Business Spanish - ELE/N</span></h3>
+        <ul>
+          <li><span class="lang-es">Especialidad en seguros - Vocabulario y situaciones del sector asegurador</span><span class="lang-en">Insurance specialty - Vocabulary and situations in the insurance sector</span></li>
+          <li><span class="lang-es">Comunicación empresarial - Reuniones, presentaciones y negociación</span><span class="lang-en">Business communication - Meetings, presentations and negotiation</span></li>
+        </ul>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&q=80" alt="Biblioteca de libros">
+          <figcaption><em><span class="lang-es">Recursos para todos los niveles</span><span class="lang-en">Resources for all levels</span></em></figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer style="display:flex;align-items:center;justify-content:center;gap:0.5rem">
+      <img src="APC FINAL.png" alt="Logo APC" style="width:80px;height:80px;border-radius:50%;object-fit:cover">
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+    <script>
+      function changeLanguage(lang){
+        localStorage.setItem('language',lang);
+        document.documentElement.setAttribute('data-lang',lang);
+      }
+      // Al cargar, aplicar el idioma guardado sin recargar la página
+      document.documentElement.setAttribute('data-lang', localStorage.getItem('language') || 'es');
+    </script>
+  </body>
+>>>>>>> 6c3d966 (Añadiendo página de certificaciones internacionales y carpeta Certif)
 </html>
